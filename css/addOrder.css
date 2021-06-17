@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+h1, h2, p, div, button {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+.block {
+  width: 100%;
+  height: auto;
+}
+
+.block__wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header {
+  background-color: #f6f6f6;
+}
+
+.logoWrapper {
+  width: 162px;
+  height: 64px;
+}
+
+.logoWrapper .logo {
+  width: 162px;
+  height: 64px;
+}
+
+.navigation__link {
+  color: #000000;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navigation__link + .navigation__link {
+  margin-left: 30px;
+}
+
+.navigation__active {
+  color: #eb7900;
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #666666;
+}
+
+.footerLinks__link {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.footerLinks__link + .footerLinks__link {
+  margin-left: 30px;
+}
+
+.footerPhone {
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 920px) {
+  .footerLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footerLinks__link + .footerLinks__link {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .logoWrapper {
+    width: 122px;
+    height: 48px;
+  }
+  .logoWrapper .logo {
+    width: 122px;
+    height: 48px;
+  }
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .navigation__link {
+    font-size: 16px;
+  }
+  footer {
+    padding: 30px 0;
+  }
+  footer .block__wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footerLinks {
+    margin: 30px 0;
+  }
+}
+
+#addOrder {
+  padding: 60px 0;
+}
+
+#addOrder .block__wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.addOrder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.addOrder p {
+  font-weight: 600;
+}
+
+.addOrder input {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.addOrder textarea {
+  width: 100%;
+  height: 170px;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #000;
+}
+
+.addOrder button {
+  max-width: 320px;
+  height: 60px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  background-color: #eb7900;
+  border-radius: 30px;
+  margin: 30px 0;
+}
+/*# sourceMappingURL=addOrder.css.map */

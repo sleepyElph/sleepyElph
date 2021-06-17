@@ -1,0 +1,48 @@
+@import "template.scss";
+
+h1 {
+    margin-top: 20px;
+}
+
+.signIn {
+    display: flex;
+    flex-direction: column;
+
+    p {
+        font-weight: 600;
+    }
+
+    input {
+        max-width: 300px;
+        height: 30px;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    button {
+        max-width: 320px;
+        height: 60px;
+        font-family: $font;
+        font-size: 20px;
+        background-color: #eb7900;
+        border-radius: 30px;
+        margin: 30px 0;
+    }
+}
+
+#mainContent {
+    padding: 30px 0;
+
+    .block__wrapper {
+        flex-direction: column;
+
+        p {
+            margin: 20px 0;
+        }
+
+        a{
+            margin-bottom: 30px;
+        }
+    }
+}

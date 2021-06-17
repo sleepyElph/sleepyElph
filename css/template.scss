@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+$font: 'Roboto', sans-serif;
+
+h1, h2, p, div, button {
+    font-family: $font;
+}
+
+body {
+    margin: 0;
+}
+
+.block {
+    width: 100%;
+    height: auto;
+
+    &__wrapper {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+header {
+    background-color: #f6f6f6;
+}
+
+.logoWrapper {
+    width: 162px;
+    height: 64px;
+
+    .logo {
+        width: 162px;
+        height: 64px;
+    }
+}
+
+.navigation {
+
+
+    &__link {
+        color: #000000;
+        font-family: $font;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    &__link + &__link {
+        margin-left: 30px;
+    }
+
+    &__active {
+        color: #eb7900;
+        text-decoration: underline;
+    }
+}
+
+footer {
+    background-color: #666666;
+}
+
+.footerLinks {
+
+
+    &__link {
+        color: #ffffff;
+        font-family: $font;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    &__link + &__link {
+        margin-left: 30px;
+    }
+}
+
+.footerPhone {
+    color: #ffffff;
+    font-family: $font;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+@media screen and (max-width:920px) {
+    .footerLinks {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__link + &__link {
+            margin-top: 10px;
+            margin-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width:650px) {
+    .logoWrapper {
+        width: 122px;
+        height: 48px;
+    
+        .logo {
+            width: 122px;
+            height: 48px;
+        }
+    }
+
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        &__link {
+            font-size: 16px;
+        }
+    }
+
+    footer {
+        padding: 30px 0;
+
+        .block__wrapper {
+            flex-direction: column;
+        }
+    }
+
+    .footerLinks {
+        margin: 30px 0;
+    }
+}
